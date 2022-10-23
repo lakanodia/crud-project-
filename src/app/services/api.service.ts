@@ -28,4 +28,8 @@ export class ApiService {
   getRoles() {
     return this.http.get<any>('http://localhost:3000/roles/');
   }
+
+  deleteUser(id: number){
+    return this.http.get<any>(`http://localhost:3000/usersList/${id}`);
+  }
 }
