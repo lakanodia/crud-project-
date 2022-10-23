@@ -4,7 +4,7 @@ import { ApiService } from '../services/api.service';
 
 interface Role {
   id: number;
-  role: string;
+  name: string;
 }
 
 @Component({
@@ -17,10 +17,7 @@ export class DialogComponent implements OnInit {
 
   registerForm!: FormGroup;
 
-  roles: Role[] = [
-    { id: 1, role: 'Admin' },
-    { id: 2, role: 'Manager' },
-  ];
+  roles: Role[] = [];
 
   constructor(private fb: FormBuilder, private api: ApiService) {}
 
@@ -32,6 +29,15 @@ export class DialogComponent implements OnInit {
       birthDate: ['', Validators.required],
       password: ['', Validators.required],
       roleID: ['', Validators.required],
+    });
+
+    this.getAllRoles();
+  }
+
+  getAllRoles() {
+    this.api.getRoles().subscribe((res) => {
+      console.log(res);
+      this.roles = res;
     });
   }
 

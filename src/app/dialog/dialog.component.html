@@ -41,8 +41,8 @@
         <mat-form-field appearance="fill">
             <mat-label>User Role</mat-label>
             <mat-select formControlName="roleID"  name="role">
-            <mat-option *ngFor="let role of roles" [value]="role.role">
-                {{role.role}}
+            <mat-option *ngFor="let role of roles; let i  = index;" [value]="role.name">
+                {{role.name}}
             </mat-option>
             </mat-select>
         </mat-form-field>
@@ -50,4 +50,4 @@
 
 </div>
 <button (click)="onRegister()" mat-raised-button color="primary">Save </button>
-<button style="margin-left: 15px;" mat-raised-button color="warn" mat-dialog-close>close </button>
+<button style="margin-left: 15px;" mat-raised-button color="warn" mat-dialog-close>Close </button>

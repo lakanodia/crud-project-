@@ -24,4 +24,8 @@ export class ApiService {
   getUsers() {
     return this.http.get<any>('http://localhost:3000/usersList/');
   }
+
+  getRoles() {
+    return this.http.get<any>('http://localhost:3000/roles/');
+  }
 }
