@@ -60,16 +60,19 @@
           <th mat-header-cell *matHeaderCellDef mat-sort-header>Action</th>
           <td mat-cell *matCellDef="let row">
             <div class="action-buttons">
-            <button mat-icon-button color="primary">
-              <mat-icon>edit</mat-icon>
-            </button>
+              <button
+                mat-icon-button
+                color="primary"
+                (click)="onEditUserInfo(row)"
+              >
+                <mat-icon>edit</mat-icon>
+              </button>
 
-            <button mat-mini-fab color="warn">
-              <mat-icon>delete</mat-icon>
-            </button>
-          </div>
+              <button mat-mini-fab color="warn" (click)="onDeleteUser(row.id)">
+                <mat-icon>delete</mat-icon>
+              </button>
+            </div>
           </td>
-
         </ng-container>
 
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>

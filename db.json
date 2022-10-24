@@ -11,67 +11,31 @@
   ],
   "usersList": [
     {
-      "username": "Likanodia",
-      "firstName": "Lika",
-      "lastName": "Nodia",
-      "birthDate": "1993-11-09T21:00:00.000Z",
+      "username": "DavidCorrrr",
+      "firstName": "David",
+      "lastName": "Cooper",
+      "birthDate": "1996-07-09T19:00:00.000Z",
       "password": "123123",
       "roleID": "Admin",
-      "id": 1
-    },
-    {
-      "username": "Lakano",
-      "firstName": "Laka",
-      "lastName": "Nodia",
-      "birthDate": "1993-11-09T21:00:00.000Z",
-      "password": "123123",
-      "roleID": "Admin",
-      "id": 2
-    },
-    {
-      "username": "JohnMay",
-      "firstName": "John",
-      "lastName": "Mayer",
-      "birthDate": "1997-06-10T19:00:00.000Z",
-      "password": "dddd",
-      "roleID": "Manager",
       "id": 3
     },
     {
-      "username": "ElenaNord",
-      "firstName": "Elena",
-      "lastName": "Nord",
-      "birthDate": "1994-11-16T20:00:00.000Z",
-      "password": "123123",
-      "roleID": "Manager",
+      "username": "Ann",
+      "firstName": "AnnNa",
+      "lastName": "Nacy",
+      "birthDate": "1977-06-23T20:00:00.000Z",
+      "password": "234234",
+      "roleID": "Admin",
       "id": 4
     },
     {
-      "username": "AnnaM",
-      "firstName": "Anna",
-      "lastName": "Mayer",
-      "birthDate": "1997-02-11T19:00:00.000Z",
-      "password": "123123",
-      "roleID": "Manager",
+      "username": "Anna",
+      "firstName": "AnnNa",
+      "lastName": "Nacy",
+      "birthDate": "1977-06-23T20:00:00.000Z",
+      "password": "234234",
+      "roleID": "Admin",
       "id": 5
-    },
-    {
-      "username": "DavidCo",
-      "firstName": "David",
-      "lastName": "Coper",
-      "birthDate": "1992-08-12T20:00:00.000Z",
-      "password": "123123",
-      "roleID": "Admin",
-      "id": 6
-    },
-    {
-      "username": "MayaRe",
-      "firstName": "Maya",
-      "lastName": "Reck",
-      "birthDate": "2022-10-26T20:00:00.000Z",
-      "password": "asdasd",
-      "roleID": "Admin",
-      "id": 7
     }
   ],
   "comments": [

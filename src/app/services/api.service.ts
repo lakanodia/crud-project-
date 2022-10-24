@@ -30,6 +30,10 @@ export class ApiService {
   }
 
   deleteUser(id: number){
-    return this.http.get<any>(`http://localhost:3000/usersList/${id}`);
+    return this.http.delete<any>(`http://localhost:3000/usersList/${id}`);
+  }
+
+  updateUser(data: any, id: number){
+    return this.http.put<any>(`http://localhost:3000/usersList/${id}`, data)
   }
 }
